@@ -1,0 +1,21 @@
+Deloitte
+• Designed and integrated Single-Sign-On capabilities for clients having 100+ active applications.
+• Helped clients understand modern identity and access management practices and implement them.
+• Extensively worked on Okta to provide SSO capabilities and modernize applications.
+• Initially started off as an intern campus hire and was offered a fulltime role after completion of the internship.
+
+Phamoss Inc
+• Developed the entirety of the backend with a small team of 3 for a nascent startup.
+• Integrated modern NodeJs frameworks such as ExpressJs and Sequelize to production level code and ensure optimum
+performance. Worked on MERN Stack ( MySQL, ExpressJs, ReactJs, NodeJs ).
+• Developed core backend functionalities for applications on REST standard.
+• Deployed the entire application on AWS Infrastructure and ensured a HA and Resilient application using ASGs and ALBs
+• Integrated CD/CI capabilities in AWS for faster development times.
+
+Reliance Industries
+• Developed Deep Learning models that identified CAPTCHAs and broke them using Transfer learning and leveraged image
+processing frameworks such as OpenCV. Leveraged pre-trained neural networks for several object detection projects.
+• Leveraged YOLO (Darkflow implementation) for object detection.
+• Developed an Object Detection model that identified people and their dress colours to help with faster Person of Interest Identification.
+• Analyzed and cleaned several datasets to be used for training purposes for deep learning projects.
+• Helped deploy several machine learning models into cloud frameworks like Docker and Kubernetes.
