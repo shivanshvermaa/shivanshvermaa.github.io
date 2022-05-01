@@ -17,5 +17,5 @@ Reliance Industries
 processing frameworks such as OpenCV. Leveraged pre-trained neural networks for several object detection projects.
 • Leveraged YOLO (Darkflow implementation) for object detection.
 • Developed an Object Detection model that identified people and their dress colours to help with faster Person of Interest Identification.
-• Analyzed and cleaned several datasets to be used for training purposes for deep learning projects.
+• Analyzed and cleaned several large datasets to be used for training purposes for deep learning projects.
 • Helped deploy several machine learning models into cloud frameworks like Docker and Kubernetes.

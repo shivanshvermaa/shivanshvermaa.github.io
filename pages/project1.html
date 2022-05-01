@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+  <head>
+
+    <!-- Title -->
+    <title>Shivansh Verma Project 1</title>
+
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bootstrap HTML template and UI kit by Erilisdesign">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/themify-icons/css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/slick/slick.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/featherlight/featherlight.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/featherlight/featherlight.gallery.min.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/utilities.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+  </head>
+  <body class="bg-gray-800">
+
+    <!-- Loader -->
+    <div class="loader bg-dark">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Site navigation -->
+    <nav id="siteNavbar" class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-gray-800 shadow-dark px-lg-4">
+
+      <!-- Toggler -->
+      <button class="navbar-toggler-alternative" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-alternative-icon">
+          <span></span>
+        </span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <!-- Navigation -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#Work-Experience">Work Experience</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLinkPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu bg-gray-900" aria-labelledby="dropdownMenuLinkPortfolio">
+              <a class="dropdown-item text-white" href="../index.html#portfolio">All Projects</a>
+              <a class="dropdown-item text-primary" href="../pages/project1.html">Automatic Keyword Extraction</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#education">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Button - Back to top -->
+    <a href="#" class="btn-back-to-top scrollto btn btn-icon btn-primary shadow-light mb-4 mr-4" tabindex="-1">
+      <i class="fas fa-chevron-up btn-icon-inner"></i>
+    </a>
+
+    <section class="bg-gray-900 py-3 py-xl-12">
+      <div class="container my-2">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center text-white">
+            <h2 class="h1 mb-0">Automatic Keyword Extraction using Word2Vec</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-9 text-white">
+      <div class="container">
+        <div class="row mfp-gallery mb-1 mb-lg-8">
+          <div class="col-12 ">
+            <img alt="Architect" src="../assets/images/NLP-image-scaled.jpg" class="img-fluid">
+          </div>
+        </div>
+        <div class="row p-4">
+            <h1>About The Project</h1><br>
+        </div>
+      
+        <div class="row p-2">
+          <span class="badge badge-success p-4 m-1 ">Python</span>
+          <span class="badge badge-success p-4 m-1">Natural Language Processing</span>
+          <span class="badge badge-success p-4 m-1">Neural Networks</span>
+          <span class="badge badge-success p-4 m-1">Word2Vec</span>          
+        </div>
+
+        <div class="row p-4">
+
+            <p class="h5 text-gray-300"> Data, which is being called the oil of the tech age is massive in nature; and it keeps increasing day by day with more users coming online and generating data. What me and my teammates idea was to develop a solution that provides the best keywords to describe a text using Word2Vec and PowerRank algorithm.</p>
+            <div class="row mfp-gallery mb-1 mb-lg-8">
+              <div class="col-12 ">
+                <img alt="Architect" src="../assets/images/nlp-project1-workflow.png" class="img-fluid">
+              </div>
+            </div>
+            <p class="h5 text-gray-300">What our work flow was to use the Word2Vec implementation from the GENSIM library after getting the data from the 50,000 Vital level 5 Wikipedia articles using BeautifulSoup or the WikipediaAPI and then preprocess the data and then put it into the two layer neural network to form a vector of N-dimension vector and that would be used to determine the parameters of the vectors.
+              The two layer neural network would the change the parameters of the of the vectors as and when new words would be accounted with.</p>
+            <p class="h5 text-gray-300">Word2vec is a group of related models that are used to produce word embeddings. These models are shallow, two-layer neural networks that are trained to reconstruct linguistic contexts of words. Word2vec takes as its input a large corpus of text and produces a vector space, typically of several hundred dimensions, with each unique word in the corpus being assigned a corresponding vector in the space. After training our data on the data set we would be using PowerRank algorithm to get the top 10 best keywords that describle the textual content.</p>
+            
+            <h4>TL;DR</h4>
+            <p class="h5 text-gray-300">• Developed an NLP based automatic keyword extractor on Python using neural networks that outputs best keywords that represent the article by using PowerRank algorithm and is used for better Search Engine Optimization(SEO).<br>
+              • Leveraged the Word2Vec and NLTK frameworks to train the dataset of 50,000 level 5 vital Wikipedia articles.<br>
+              • Utilized word embeddings in Word2Vec which understands the context of words rather than frequency.<br></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="position-relative py-9 bg-dark text-gray-500">
+      <div class="container px-xl-1">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <!-- <img src="assets/images/logo-white.png" alt="" class="img-fluid mb-5"> -->
+            <p class="text-gray-400 mb-5">Code for this website is in my GitHub.</p>
+            <ul class="list-inline mb-3">
+
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                  <i class="fab fa-facebook-f btn-icon-inner"></i>
+                </a>
+              </li>
+
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                  <i class="fab fa-twitter btn-icon-inner"></i>
+                </a>
+              </li>
+
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                  <i class="fab fa-linkedin-in btn-icon-inner"></i>
+                </a>
+              </li>
+
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                  <i class="fab fa-dribbble btn-icon-inner"></i>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Libs JS -->
+
+    <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/vendor/popper.js/dist/popper.min.js"></script>
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../assets/vendor/jquery-form/dist/jquery.form.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope/dist/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/featherlight/featherlight.min.js"></script>
+    <script src="../assets/vendor/featherlight/jquery.detect_swipe.js"></script>
+    <script src="../assets/vendor/featherlight/featherlight.gallery.min.js"></script>
+    <script src="../assets/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="../assets/vendor/jQuery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../assets/vendor/slick/slick.min.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="../assets/js/main.js"></script>
+
+  </body>
+</html>

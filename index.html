@@ -90,22 +90,22 @@
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link scrollto" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link scrollto" href="#about">About me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link scrollto" href="#Work-Experience">Work Experience</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#portfolio">Projects</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLinkPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu bg-gray-900" aria-labelledby="dropdownMenuLinkPortfolio">
+              <a class="dropdown-item text-white" href="#portfolio">All Projects</a>
+              <a class="dropdown-item text-white" href="pages/project1.html">Automatic Keyword Extraction</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link scrollto" href="#blog">Edcuational Experiences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#contact">Contact</a>
+            <a class="nav-link scrollto" href="#education">Education</a>
           </li>
         </ul>
 
@@ -173,7 +173,7 @@
             <div class="col-6 col-md-4 mt-3 d-none d-md-block">
               <!-- Fix the orientation here -->
               <div class="row">
-                <a href="#!" class="btn btn-primary d-block d-md-inline-block mb-3 mb-md-0">Download CV</a>
+                <a href="assets/Shivansh Verma Resume_v2.pdf" target="_blank" download = "Shivansh Verma - Resume" class="btn btn-primary d-block d-md-inline-block mb-3 mb-md-0">Download CV</a>
               </div>
             </div>
 
@@ -183,27 +183,30 @@
     </section>
 
     <!-- Work-Experience -->
-    <section id="Work-Experience" class="">
+    <section id="Work-Experience">
       <!-- Blue background for the webiste -->
         <div class="overlay overlay-advanced  bg-primary rounded-3x"></div>
 
       <div class="container">
-        <div class="column mx-n4 my-n6 py-md-6 align-items-center">
+        <div class="column  align-items-center">
 
-          <div class="col-md-6 col-lg-12 px-4 pt-6 text-white">
+          <div class="col-md-6 col-lg-12 text-white">
             <h2 class="mb-0">Work Experiences</h2>
             <p class="mb-0">I have had the privilage to work with an expansive set of people on various project through college and professional life who made collaborative work easier. Here is the compendium of my Work Experiences.</p>
             <a href="#contact" class="btn btn-text-white scrollto d-flex d-md-inline-flex align-items-center px-0">LinkedIn page <i class="fas fa-angle-right ml-3 d-flex align-items-center justify-content-center w--8 h--8 bg-soft-white rounded-circle"></i></a>
           </div>
 
-          <div class="col-md-6 col-lg-12 px-4 py-6">
-            <div class="p-3 shadow-dark shadow-lift rounded-3x bg-gray-900">
+          <div class="col-md-6 col-lg-12 px-4">
+            <div class="p-3 shadow-dark shadow-lift rounded-3x bg-gray-900 pb-6">
               <!-- <div class="icon icon-6x text-primary mb-4">
                 <i class="ti-book"></i>
               </div> -->
               <div class="divider bg-primary ml-5"></div>
               <h4 class="h6 text-white pl-5">Deloitte, Systems Analyst</h4> <i><h1 class="h6 text-white pl-5">July,2021 - July 2022</h1></i>
-              <p class="text-gray-400 pl-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+              <p class="text-gray-400 pl-5 mb-0">• Designed and integrated Single-Sign-On capabilities for clients having 100+ active applications.<br>
+                • Helped clients understand modern identity and access management practices and implement them.<br>
+                • Extensively worked on Okta to provide SSO capabilities and modernize applications.<br>
+                • Initially started off as an intern campus hire and was offered a fulltime role after completion of the internship.</p>
               
             </div>
           </div>
@@ -214,20 +217,33 @@
                 <i class="ti-book"></i>
               </div> -->
               <div class="divider bg-primary ml-5"></div>
-              <h4 class="h6 text-white pl-5">Deloitte, Systems Analyst</h4> <i><h1 class="h6 text-white pl-5">July,2021 - July 2022</h1></i>
-              <p class="text-gray-400 pl-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+              <h4 class="h6 text-white pl-5">Phamoss, Backend Engineer</h4> <i><h1 class="h6 text-white pl-5">July,2021 - July 2022</h1></i>
+              <p class="text-gray-400 pl-5">
+                • Developed the entirety of the backend with a small team of 3 for a nascent startup.<br>
+                • Integrated modern NodeJs frameworks such as ExpressJs and Sequelize to production level code and ensure optimum
+                performance. <br>
+                • Worked on MERN Stack ( MySQL, ExpressJs, ReactJs, NodeJs ). <br>
+                • Developed core backend functionalities for applications on REST standard. <br>
+                • Deployed the entire application on AWS Infrastructure and ensured a HA and Resilient application using ASGs and ALBs. <br>
+                • Integrated CD/CI capabilities in AWS for faster development times. <br>
+                </p>
               
             </div>
           </div>
 
-           <div class="col-md-6 col-lg-12 px-4 py-6">
+           <div class="col-md-6 col-lg-12">
             <div class="p-3 shadow-dark shadow-lift rounded-3x bg-gray-900">
               <!-- <div class="icon icon-6x text-primary mb-4">
                 <i class="ti-book"></i>
               </div> -->
               <div class="divider bg-primary ml-5"></div>
-              <h4 class="h6 text-white pl-5">Deloitte, Systems Analyst</h4> <i><h1 class="h6 text-white pl-5">July,2021 - July 2022</h1></i>
-              <p class="text-gray-400 pl-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+              <h4 class="h6 text-white pl-5">Reliance Industries, Machine Learning Intern</h4> <i><h1 class="h6 text-white pl-5">July,2021 - July 2022</h1></i>
+              <p class="text-gray-400 pl-5">• Developed Deep Learning models that identified CAPTCHAs and broke them using Transfer learning and leveraged image
+                processing frameworks such as OpenCV. Leveraged pre-trained neural networks for several object detection projects.<br>
+                • Leveraged YOLO (Darkflow implementation) for object detection.<br>
+                • Developed an Object Detection model that identified people and their dress colours to help with faster Person of Interest Identification.<br>
+                • Analyzed and cleaned several large datasets to be used for training purposes for deep learning projects.<br>
+                • Helped deploy several machine learning models into cloud frameworks like Docker and Kubernetes.</p>
               
             </div>
           </div>
@@ -238,7 +254,7 @@
 
     <!-- Portfolio -->
     <section id="portfolio" class="py-9 py-xl-12">
-      <div class="overlay overlay-advanced bg-gray-900 rounded-3x"></div>
+      <!-- <div class="overlay overlay-advanced bg-gray-900 rounded-3x"></div> -->
       <div class="container">
         <div class="row mb-8">
           <div class="col-lg-10 mx-auto text-center">
@@ -248,85 +264,150 @@
         </div>
         <div class="masonry-container row mx-n4 mt-n6">
 
-          <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item design" data-featherlight-gallery data-featherlight-filter="a">
-            <a class="card border-0 rounded-3x" href="assets/images/portfolio/portfolio-7.jpg" data-title="Tropical beach" data-text="1. Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris.">
+          <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item design">
+            <a class="card border-0 rounded-3x" href="pages/project1.html">
               <div class="card-zoom shadow-dark">
-                <img class="card-img" src="assets/images/portfolio/portfolio-7.jpg" alt="">
+                <img class="card-img" src="assets/images/NLP-image-scaled.jpg" alt="">
               </div>
-              <div class="card-footer p-0 mt-4">
-                <p class="small text-uppercase mb-1 text-gray-400">Design</p>
-                <h4 class="h5 text-white mb-0">Waves</h4>
-              </div>
+              
             </a>
-            <a class="d-none" href="assets/images/photos/photo-1.jpg" data-title="Mountains" data-text="2. Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris."></a>
-            <a class="d-none" href="assets/images/photos/photo-2.jpg" data-title="Waves" data-text="3. Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris."></a>
-          </div>
-
-          <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item web">
-            <a class="card border-0 rounded-3x" href="assets/images/portfolio/portfolio-5.jpg" data-featherlight="image">
-              <div class="card-zoom shadow-dark">
-                <img class="card-img" src="assets/images/portfolio/portfolio-5.jpg" alt="">
-              </div>
-              <div class="card-footer p-0 mt-4">
-                <p class="small text-uppercase mb-1 text-gray-400">Web</p>
-                <h4 class="h5 text-white mb-0">Bridge</h4>
-              </div>
-            </a>
+            <div class="card-footer p-0 mt-4">
+              <p class="small text-uppercase mb-1 text-gray-400">Natural Language Processing</p>
+              <h4 class="h5 text-white mb-0">Automatic Keyword Extraction using Neural Networks</h4>
+            </div>
           </div>
 
           <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item design">
-            <a class="card border-0 rounded-3x" href="assets/images/portfolio/portfolio-8.jpg" data-featherlight="image">
+            <a class="card border-0 rounded-3x" href="pages/project1.html">
               <div class="card-zoom shadow-dark">
-                <img class="card-img" src="assets/images/portfolio/portfolio-8.jpg" alt="">
+                <img class="card-img" src="assets/images/NLP-image-scaled.jpg" alt="">
               </div>
-              <div class="card-footer p-0 mt-4">
-                <p class="small text-uppercase mb-1 text-gray-400">Design</p>
-                <h4 class="h5 text-white mb-0">Workspace</h4>
-              </div>
+              
             </a>
+            <div class="card-footer p-0 mt-4">
+              <p class="small text-uppercase mb-1 text-gray-400">Natural Language Processing</p>
+              <h4 class="h5 text-white mb-0">Automatic Keyword Extraction using Neural Networks</h4>
+            </div>
           </div>
 
-          <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item branding">
-            <a class="card border-0 rounded-3x" href="https://www.youtube.com/embed/Gm7FX3WMk3c" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true" data-featherlight-iframe-width="1200" data-featherlight-iframe-height="675">
+          <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item design">
+            <a class="card border-0 rounded-3x" href="pages/project1.html">
               <div class="card-zoom shadow-dark">
-                <img class="card-img" src="assets/images/portfolio/portfolio-9.jpg" alt="">
+                <img class="card-img" src="assets/images/NLP-image-scaled.jpg" alt="">
               </div>
-              <div class="card-footer p-0 mt-4">
-                <p class="small text-uppercase mb-1 text-gray-400">Branding</p>
-                <h4 class="h5 text-white mb-0">Desert</h4>
-              </div>
+              
             </a>
+            <div class="card-footer p-0 mt-4">
+              <p class="small text-uppercase mb-1 text-gray-400">Natural Language Processing</p>
+              <h4 class="h5 text-white mb-0">Automatic Keyword Extraction using Neural Networks</h4>
+            </div>
           </div>
+
+          <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item design">
+            <a class="card border-0 rounded-3x" href="pages/project1.html">
+              <div class="card-zoom shadow-dark">
+                <img class="card-img" src="assets/images/NLP-image-scaled.jpg" alt="">
+              </div>
+              
+            </a>
+            <div class="card-footer p-0 mt-4">
+              <p class="small text-uppercase mb-1 text-gray-400">Natural Language Processing</p>
+              <h4 class="h5 text-white mb-0">Automatic Keyword Extraction using Neural Networks</h4>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item design">
+            <a class="card border-0 rounded-3x" href="pages/project1.html">
+              <div class="card-zoom shadow-dark">
+                <img class="card-img" src="assets/images/NLP-image-scaled.jpg" alt="">
+              </div>
+              
+            </a>
+            <div class="card-footer p-0 mt-4">
+              <p class="small text-uppercase mb-1 text-gray-400">Natural Language Processing</p>
+              <h4 class="h5 text-white mb-0">Automatic Keyword Extraction using Neural Networks</h4>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 pt-6 px-4 masonry-item design">
+            <a class="card border-0 rounded-3x" href="pages/project1.html">
+              <div class="card-zoom shadow-dark">
+                <img class="card-img" src="assets/images/NLP-image-scaled.jpg" alt="">
+              </div>
+              
+            </a>
+            <div class="card-footer p-0 mt-4">
+              <p class="small text-uppercase mb-1 text-gray-400">Natural Language Processing</p>
+              <h4 class="h5 text-white mb-0">Automatic Keyword Extraction using Neural Networks</h4>
+            </div>
+          </div>
+
 
         </div>
       </div>
     </section>
 
+    <section id="education">
+      <!-- Blue background for the webiste -->
+        <div class="overlay overlay-advanced  bg-primary rounded-3x"></div>
 
+      <div class="container">
+        <div class="column  align-items-center">
+
+          <div class="col-md-6 col-lg-12 text-white">
+            <h2 class="mb-5">Education</h2>
+          </div>
+
+          <div class="col-md-6 col-lg-12 px-4">
+            <div class="p-3 shadow-dark shadow-lift rounded-3x bg-gray-900 pb-6">
+              <!-- <div class="icon icon-6x text-primary mb-4">
+                <i class="ti-book"></i>
+              </div> -->
+              <div class="divider bg-primary ml-5"></div>
+              <h4 class="h6 text-white pl-5">Northeastern University, Boston, United States of America</h4> <i><h1 class="h6 text-white pl-5">September,2022 - September 2024(Expected)</h1></i>               
+              <p class="text-gray-400 pl-5">Master of Scince , Data Science</p>
+            </div>
+          </div>
+
+          
+          <div class="col-md-6 col-lg-12 mt-5 px-4">
+            <div class="p-3 shadow-dark shadow-lift rounded-3x bg-gray-900 pb-6">
+              <!-- <div class="icon icon-6x text-primary mb-4">
+                <i class="ti-book"></i>
+              </div> -->
+              <div class="divider bg-primary ml-5"></div>
+              <h4 class="h6 text-white pl-5">Vellore Institute of Technology, Chennai, India</h4> <i><h1 class="h6 text-white pl-5">July,2017 - July,2021</h1></i>               
+              <p class="text-gray-400 pl-5">Bachelor of Technology, Computer Science</p>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
     <!-- Contact -->
-    <section id="contact" class="py-9 py-xl-10">
-      <div class="overlay overlay-advanced  bg-primary rounded-3x"></div>
+    <!-- <section id="contact" class="py-9 py-xl-10">
       <div class="container text-white">
         <div class="row">
           <div class="col-lg-10 col-xl-9 mx-auto">
             <h2 class="mb-4 text-center">Contact</h2>
-            <p class="text-center text-gray-400 mb-8">Want to say hello? Want to know more about us? Give us a call or drop us an email and we will get back to you as soon as we can.</p>
+            <p class="text-center text-gray-400 mb-8">Let me know what you think about my profile and work!</p>
             <div class="row">
 
               <div class="col-sm-6 col-md-4 mb-5 mb-md-0">
                 <div class="icon icon-4x text-primary mb-4">
                   <i class="ti-mobile"></i>
                 </div>
-                <p>(0091) 1111 1234567<br/>
-                (084) 2222 1234567</p>
+                <p>+91-8080465234<br/>
               </div>
 
               <div class="col-sm-6 col-md-4 mb-5 mb-md-0">
                 <div class="icon icon-4x text-primary mb-4">
                   <i class="ti-location-pin"></i>
                 </div>
-                <p>69 Halsey St, New York<br/>
-                United States</p>
+                <p>Northeastern University,Boston</p>
               </div>
 
               <div class="col-sm-6 col-md-4">
@@ -334,72 +415,23 @@
                   <i class="ti-email"></i>
                 </div>
                 <p>
-                  <a href="mailto:support@example.com" class="text-white">support@example.com</a><br/>
-                  <a href="mailto:hello@example.com" class="text-white">hello@example.com</a>
+                  <a href="mailto:shivansh.verma8080@gmail.com" class="text-white">shivansh.verma8080@gmail.com</a><br/>
                 </p>
               </div>
-
-            </div>
-
-            <hr class="my-8 border-light opacity-30">
-
-            <div class="contact-form">
-              <form class="mb-0" id="cf" name="cf" action="include/sendemail.php" method="post" autocomplete="off">
-                <div class="form-row">
-
-                  <div class="form-process"></div>
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" id="cf-name" name="cf-name" placeholder="Enter your name" class="form-control form-control-soft-light bg-gray-700 border-0 required">
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="email" id="cf-email" name="cf-email" placeholder="Enter your email address" class="form-control form-control-soft-light bg-gray-700 border-0 required">
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-group">
-                      <input type="text" id="cf-subject" name="cf-subject" placeholder="Subject (Optional)" class="form-control form-control-soft-light bg-gray-700 border-0">
-                    </div>
-                  </div>
-
-                  <div class="col-12 mb-4">
-                    <div class="form-group">
-                      <textarea name="cf-message" id="cf-message" placeholder="Message" class="form-control form-control-soft-light bg-gray-700 border-0 required" rows="7"></textarea>
-                    </div>
-                  </div>
-
-                  <div class="col-12 d-none">
-                    <input type="text" id="cf-botcheck" name="cf-botcheck" value="" class="form-control form-control-soft-light bg-gray-700 border-0" />
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <button class="btn btn-primary" type="submit" id="cf-submit" name="cf-submit">Send Message</button>
-                  </div>
-
-                  <input type="hidden" name="prefix" value="cf-">
-
-                </div>
-              </form>
-              <div class="contact-form-result text-center"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="position-relative py-9 py-lg-12 bg-dark text-gray-500">
-      <div class="container px-xl-10">
+    <footer class="position-relative py-9 bg-dark text-gray-500">
+      <div class="container px-xl-1">
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <!-- <img src="assets/images/logo-white.png" alt="" class="img-fluid mb-5"> -->
             <p class="text-gray-400 mb-5">Code for this website is in my GitHub.</p>
-            <ul class="list-inline mb-8">
+            <ul class="list-inline mb-3">
 
               <li class="list-inline-item mx-0">
                 <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
@@ -432,6 +464,7 @@
     </footer>
 
     <!-- Libs JS -->
+
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/popper.js/dist/popper.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -449,6 +482,29 @@
 
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+    </script>
 
   </body>
 </html>
