@@ -3,7 +3,7 @@
   <head>
 
     <!-- Title -->
-    <title>Automatic Keyword Extraction using Neural Networks</title>
+    <title>People and Dress Colour Identification</title>
 
     <!-- Required Meta Tags -->
     <meta charset="utf-8">
@@ -65,9 +65,9 @@
             </a>
             <div class="dropdown-menu bg-gray-900" aria-labelledby="dropdownMenuLinkPortfolio">
               <a class="dropdown-item text-white" href="../index.html#portfolio">All Projects</a>
-              <a class="dropdown-item text-primary" href="../pages/project1.html">Automatic Keyword Extraction</a>
+              <a class="dropdown-item text-white" href="../pages/project1.html">Automatic Keyword Extraction</a>
               <a class="dropdown-item text-white" href="../pages/project2.html">CAPTCHA Detection</a>
-              <a class="dropdown-item text-white" href="../pages/project3.html">People and Dress Colour Identification</a>
+              <a class="dropdown-item text-primary" href="../pages/project3.html">People and Dress Colour Identification</a>
             </div>
           </li>
           <li class="nav-item">
@@ -86,7 +86,7 @@
       <div class="container my-2">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center text-white">
-            <h2 class="h1 mb-0">Automatic Keyword Extraction using Word2Vec</h2>
+            <h2 class="h1 mb-0">People and Dress Colour Identification using YOLOv3 and K-Means Clustering</h2>
           </div>
         </div>
       </div>
@@ -95,8 +95,8 @@
     <section class="py-9 text-white">
       <div class="container">
         <div class="row mfp-gallery mb-1 mb-lg-8">
-          <div class="col-12 ">
-            <img alt="NLP" src="../assets/images/NLP-image-scaled.jpg" class="img-fluid">
+          <div class="col-12 center">
+            <img alt="CAPTCHA" src="../assets/images/People-Detection-Main-banner.png" class="img-fluid">
           </div>
         </div>
         <div class="row p-4">
@@ -104,28 +104,26 @@
         </div>
       
         <div class="row p-2">
-          <span class="badge badge-success p-4 m-1 ">Python</span>
-          <span class="badge badge-success p-4 m-1">Natural Language Processing</span>
+          <span class="badge badge-success p-4 m-1">Python</span>
+          <span class="badge badge-success p-4 m-1">Tensor Flow</span>
+          <span class="badge badge-success p-4 m-1">OpenCV</span>
+          <span class="badge badge-success p-4 m-1">Object Detection</span>
           <span class="badge badge-success p-4 m-1">Neural Networks</span>
-          <span class="badge badge-success p-4 m-1">Word2Vec</span>          
+          <span class="badge badge-success p-4 m-1">K-Means Clustering</span>
         </div>
 
         <div class="row p-4">
 
-            <p class="h5 text-gray-300"> Data, which is being called the oil of the tech age is massive in nature; and it keeps increasing day by day with more users coming online and generating data. What me and my teammates idea was to develop a solution that provides the best keywords to describe a text using Word2Vec and PowerRank algorithm.</p>
-            <div class="row mfp-gallery mb-1 mb-lg-8">
-              <div class="col-12 ">
-                <img alt="Architect" src="../assets/images/nlp-project1-workflow.png" class="img-fluid">
-              </div>
-            </div>
-            <p class="h5 text-gray-300">What our work flow was to use the Word2Vec implementation from the GENSIM library after getting the data from the 50,000 Vital level 5 Wikipedia articles using BeautifulSoup or the WikipediaAPI and then preprocess the data and then put it into the two layer neural network to form a vector of N-dimension vector and that would be used to determine the parameters of the vectors.
-              The two layer neural network would the change the parameters of the of the vectors as and when new words would be accounted with.</p>
-            <p class="h5 text-gray-300">Word2vec is a group of related models that are used to produce word embeddings. These models are shallow, two-layer neural networks that are trained to reconstruct linguistic contexts of words. Word2vec takes as its input a large corpus of text and produces a vector space, typically of several hundred dimensions, with each unique word in the corpus being assigned a corresponding vector in the space. After training our data on the data set we would be using PowerRank algorithm to get the top 10 best keywords that describle the textual content.</p>
+            <p class="h5 text-gray-300">Often in a picture or in Live feeds people want to identify a particular person who is wearing something distinguishing like a redshirt or a bluepant.</p>
+
+            <p class="h5 text-gray-300">In this project I used YOLOv3 to detect people in a frame and used their generated bounding boxes to extract each individual person. This helped me to remove individuals and the area of the frame they were part of for further processing.</p>
+            <p class="h5 text-gray-300">Post which I used K-Means Clustering technique to find the majority colours that are present in that screen. These values would then be used to create a colour histogram that helped to understand what the dress colour of the person in question is.</p>
+
             
-            <h4>TL;DR</h4>
-            <p class="h5 text-gray-300">• Developed an NLP based automatic keyword extractor on Python using neural networks that outputs best keywords that represent the article by using PowerRank algorithm and is used for better Search Engine Optimization(SEO).<br>
-              • Leveraged the Word2Vec and NLTK frameworks to train the dataset of 50,000 level 5 vital Wikipedia articles.<br>
-              • Utilized word embeddings in Word2Vec which understands the context of words rather than frequency.<br></p>
+            <h4 class="mx-2 my-2">TL;DR</h4>
+            <p class="h5 text-gray-300">• Designed an object-detection model to identify a person and their dress color using TensorFlow and OpenCV.<br>
+              • Used YOLO object-detection model to a person and color recognition using K-Nearest Neighbors algorithm.<br>
+              • Aids Law enforcement to identify a Person of Interest faster in crowded area and use facial recognition to confirm.<br></p>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
   <head>
 
     <!-- Title -->
-    <title>Automatic Keyword Extraction using Neural Networks</title>
+    <title>CAPTCHA Detection and Breaking</title>
 
     <!-- Required Meta Tags -->
     <meta charset="utf-8">
@@ -65,8 +65,8 @@
             </a>
             <div class="dropdown-menu bg-gray-900" aria-labelledby="dropdownMenuLinkPortfolio">
               <a class="dropdown-item text-white" href="../index.html#portfolio">All Projects</a>
-              <a class="dropdown-item text-primary" href="../pages/project1.html">Automatic Keyword Extraction</a>
-              <a class="dropdown-item text-white" href="../pages/project2.html">CAPTCHA Detection</a>
+              <a class="dropdown-item text-white" href="../pages/project1.html">Automatic Keyword Extraction</a>
+              <a class="dropdown-item text-primary" href="../pages/project2.html">CAPTCHA Detection</a>
               <a class="dropdown-item text-white" href="../pages/project3.html">People and Dress Colour Identification</a>
             </div>
           </li>
@@ -86,7 +86,7 @@
       <div class="container my-2">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center text-white">
-            <h2 class="h1 mb-0">Automatic Keyword Extraction using Word2Vec</h2>
+            <h2 class="h1 mb-0">CAPTCHA Detection and Breaking using Neural Networks</h2>
           </div>
         </div>
       </div>
@@ -95,8 +95,8 @@
     <section class="py-9 text-white">
       <div class="container">
         <div class="row mfp-gallery mb-1 mb-lg-8">
-          <div class="col-12 ">
-            <img alt="NLP" src="../assets/images/NLP-image-scaled.jpg" class="img-fluid">
+          <div class="col-12 center">
+            <img alt="CAPTCHA" src="../assets/images/captcha-main-banner" class="img-fluid">
           </div>
         </div>
         <div class="row p-4">
@@ -104,28 +104,41 @@
         </div>
       
         <div class="row p-2">
-          <span class="badge badge-success p-4 m-1 ">Python</span>
-          <span class="badge badge-success p-4 m-1">Natural Language Processing</span>
+          <span class="badge badge-success p-4 m-1">Python</span>
+          <span class="badge badge-success p-4 m-1">Tensor Flow</span>
+          <span class="badge badge-success p-4 m-1">OpenCV</span>
+          <span class="badge badge-success p-4 m-1">Object Detection</span>
           <span class="badge badge-success p-4 m-1">Neural Networks</span>
-          <span class="badge badge-success p-4 m-1">Word2Vec</span>          
+          <span class="badge badge-success p-4 m-1">Supervised Learning</span>
+          <span class="badge badge-success p-4 m-1">Robot Process Automation</span>          
         </div>
 
         <div class="row p-4">
 
-            <p class="h5 text-gray-300"> Data, which is being called the oil of the tech age is massive in nature; and it keeps increasing day by day with more users coming online and generating data. What me and my teammates idea was to develop a solution that provides the best keywords to describe a text using Word2Vec and PowerRank algorithm.</p>
-            <div class="row mfp-gallery mb-1 mb-lg-8">
-              <div class="col-12 ">
-                <img alt="Architect" src="../assets/images/nlp-project1-workflow.png" class="img-fluid">
+            <p class="h5 text-gray-300"> A CAPTCHA (an acronym for "completely automated public Turing test to tell computers and humans apart") is a type of challenge–response test used in computing to determine whether or not the user is human. CAPTCHA, as the explanation of the acronym implies, determines whether an online request or submission is made by a human or a computer. It generates and grades tests that humans can easily pass but are impossible for computer programs to solve – like having to type the scrambled or distorted words and letters inside a picture (or voice recording for the visually impaired).</p>
+            <div class="row mfp-gallery mb-3 mt-3">
+              <div class="col-12 text-center">
+                <img alt="Architect" src="../assets/images/captcha-sample.png" class="img-fluid">
               </div>
             </div>
-            <p class="h5 text-gray-300">What our work flow was to use the Word2Vec implementation from the GENSIM library after getting the data from the 50,000 Vital level 5 Wikipedia articles using BeautifulSoup or the WikipediaAPI and then preprocess the data and then put it into the two layer neural network to form a vector of N-dimension vector and that would be used to determine the parameters of the vectors.
-              The two layer neural network would the change the parameters of the of the vectors as and when new words would be accounted with.</p>
-            <p class="h5 text-gray-300">Word2vec is a group of related models that are used to produce word embeddings. These models are shallow, two-layer neural networks that are trained to reconstruct linguistic contexts of words. Word2vec takes as its input a large corpus of text and produces a vector space, typically of several hundred dimensions, with each unique word in the corpus being assigned a corresponding vector in the space. After training our data on the data set we would be using PowerRank algorithm to get the top 10 best keywords that describle the textual content.</p>
-            
-            <h4>TL;DR</h4>
-            <p class="h5 text-gray-300">• Developed an NLP based automatic keyword extractor on Python using neural networks that outputs best keywords that represent the article by using PowerRank algorithm and is used for better Search Engine Optimization(SEO).<br>
-              • Leveraged the Word2Vec and NLTK frameworks to train the dataset of 50,000 level 5 vital Wikipedia articles.<br>
-              • Utilized word embeddings in Word2Vec which understands the context of words rather than frequency.<br></p>
+            <p class="h5 text-gray-300">The above image is a sample image from which we had to extract the CAPTCHA and aid the filing process. Looking at this image it is evident that it requires heavy cleaning before any training can take place.</p>
+
+            <div class="row mfp-gallery mb-3 mt-3">
+              <div class="col-12 text-center">
+                <img alt="Architect" src="../assets/images/captcha-cleaned-sample.png" class="img-fluid">
+              </div>
+            </div>
+
+            <p class="h5 text-gray-300">The better solution that can be used will be using kernel to identify the shape of the grid that is there in this image; which was found to be a (2x2) array with the colour black.So we can use the kernel remove the grid. The above is the sample cleaned image using an OpenCV 2x2 kernel grid and using an Erode function to remove all spaces that qualify.</p><br>
+            <p class="h5 text-gray-300">This relatively cleaned image was used for trainging after manually identifying all characters and building up a dataset of characters of such kind.</p><br>
+
+            <p class="h5 text-gray-300">As YOLOv3 Model for object detection was selected due to it's lightweight and relative ease of training we need to translate the Tensorflow code to an API that can understand the commands. For the same purposes we can use the Darkflow repository made by GitHub user <a href="https://github.com/thtrieu/darkflow" target = "_blank" >thtrieu.</a></p>
+
+            <h4 class="mx-2 my-2">TL;DR</h4>
+            <p class="h5 text-gray-300">• Leveraged OpenCV to make the CAPTCHA more machine readable using several Open CV functions and cleaned the image.<br>
+              • From the cleaned images created a dataset with bounding boxes for training purposes.<br>
+              • Utilized the YOLOv3 Model to create an object detection model based on the dataset prepared after preprocessing and cleaning.<br>
+              • Model reached ~71% accuracy. One major limitation was that I did not have any GPUs for faster training purposes.<br></p>
         </div>
       </div>
     </section>
